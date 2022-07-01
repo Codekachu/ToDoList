@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-input-area></app-input-area>
+    </div>
+  </div>
+  <div class="row items">
+    <app-single-item *ngFor="let element of Allitems.items; let i = index" post="{{ Allitems.items[i] }}" currentIndex="{{ i }}"></app-single-item>
+  </div>
+</div>
